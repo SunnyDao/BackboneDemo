@@ -1,0 +1,50 @@
+//defaulthead.less
+@blue:#4081d6;
+@background_gery:#F5F5F5;
+@defaultFontColor:#4E4E4E;
+.flexbox{
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    display: box;
+}
+.flex(@num){
+	-webkit-box-flex: @num;
+    -webkit-flex: @num;
+    box-flex: @num;
+    flex: @num;
+}
+
+.w-defaulthead{
+	position: relative;
+	z-index: 2;
+	width:100%;
+	height:88px;
+	line-height: 88px;
+	text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.15);
+	//border-bottom:1px solid #e4e4e4;
+	.flexbox;
+	.back,
+	.menu{
+		display: block;
+		width: 88px;
+		height:88px;
+		text-align: center;
+		color:@defaultFontColor;
+		font-size: 24px;/*px*/
+	}
+	.title{
+		.flex(1);
+		span{
+			display: inline-block;
+			width: 550px;
+			font-size: 38px;/*px*/
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
+	}
+}
+

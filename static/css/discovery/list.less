@@ -1,0 +1,305 @@
+/*-----------------------------------------------------------------------------------------------------------
+1.项目名称：悟空找房H5
+2.页面名称：发现-->栏目页(discoveryStyle1.php)
+3.作者名称：yuxiaochen@lifang.com
+-----------------------------------------------------------------------------------------------------------*/
+
+@import "../mixins/mixins.less";
+// 引入swiper3 样式
+@import "../lib/css/wap/swiper3.less";
+//引入底部footer样式
+@import "./footer.less";
+a, u {
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.w-wrapper {
+    padding-bottom: 100px;
+    background-color: #f0f0f0;
+    header {
+        background-color: #fff;
+        font-size: 36px;
+        /*px*/
+        text-align: center;
+        height: 88px;
+        color: #4e4e4e;
+        line-height: 88px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .swiper-box {
+        padding: 0 0 20px 0;
+        background-color: #f0f0f0;
+        .swiper-container {
+            width: 100%;
+            height: auto;
+            position: relative;
+            .swiper-slide {
+                width: 100%;
+                background: #fff;
+                &>a {
+                    display: block;
+                    width: 100%;
+                    background-color: #ccc;
+                    &>img {
+                        display: block;
+                        width: 100%;
+                        height: 200px;
+                    }
+                }
+            }
+            .swiper-pagination-bullets {
+                text-align: right;
+                padding-right: 15px;
+            }
+            .swiper-pagination-bullet {
+                background: #fff;
+                opacity: 0.5;
+                height: 12px;
+                width: 12px;
+                margin-right: 6px;
+                .border-radius(12px);
+            }
+            .swiper-pagination-bullet-active {
+                background: #fff;
+                opacity: 1;
+            }
+        }
+    }
+    .complex-items-box {
+        .item {
+            padding: 40px 30px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            color: #4e4e4e;
+            width: 100%;
+            &>.content {
+                &>.text {
+                    &>p {
+                        font-size: 28px;
+                        /*px*/
+                        margin: 30px 22px;
+                        color: #000;
+                        a {
+                            font-size: 28px;
+                            /*px*/
+                            color: #4081d6;
+                            &.type {
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+                &>.img-box {
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: 388px;
+                    }
+                    video {
+                        display: none;
+                        width: 100%;
+                    }
+                    .playImg {
+                        width: 102px;
+                        height: 102px;
+                        position: absolute;
+                        z-index: 1;
+                        top: 50%;
+                        left: 50%;
+                        margin-left: -51px;
+                        margin-top: -51px;
+                    }
+                }
+            }
+            &.only-text {
+                &>.content {
+                    &>.text {
+                        .border-radius(10px);
+                        border: 1px solid #e4e4e4;
+                    }
+                }
+            }
+            &.text-up {
+                &>.content {
+                    &>.text {
+                        .border-top-radius(10px);
+                        border-top: 1px solid #e4e4e4;
+                        border-left: 1px solid #e4e4e4;
+                        border-right: 1px solid #e4e4e4;
+                        border-bottom: none;
+                        padding-bottom: 30px;
+                        &>p {
+                            margin-bottom: 10px;
+                        }
+                    }
+                    &>.img-box {
+                        top: -10px;
+                        img, video {
+                            .border-bottom-radius(10px);
+                        }
+                    }
+                }
+                .op {
+                    margin-top: 5px;
+                }
+            }
+            &.text-down {
+                &>.content {
+                    &>.text {
+                        .border-bottom-radius(10px);
+                        border-bottom: 1px solid #e4e4e4;
+                        border-left: 1px solid #e4e4e4;
+                        border-right: 1px solid #e4e4e4;
+                        border-top: none;
+                        padding-top: 30px;
+                        &>p {
+                            margin-top: 10px;
+                        }
+                    }
+                    &>.img-box {
+                        top: 10px;
+                        img, video {
+                            .border-top-radius(10px);
+                        }
+                    }
+                }
+            }
+            &.only-image {
+                .img-box {
+                    img, video {
+                        .border-radius(10px);
+                    }
+                }
+            }
+        }
+    }
+    .simple-items-box {
+        &>.item {
+            .inline-block();
+            padding: 40px 30px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            width: 100%;
+            &>.content {
+                .border-radius(10px);
+                border-bottom: 1px solid #e4e4e4;
+                border-left: 1px solid #e4e4e4;
+                border-right: 1px solid #e4e4e4;
+                border-top: none;
+                position: relative;
+                img {
+                    .border-top-radius(10px);
+                    width: 100%;
+                    height: 386px;
+                }
+                h1 {
+                    color: #4E4E4E;
+                    margin: 20px;
+                    font-size: 32px;
+                    /*px*/
+                    font-weight: 600;
+                }
+                &>p {
+                    color: #4E4E4E;
+                    font-size: 28px;
+                    /*px*/
+                    margin: 20px 22px 30px 22px;
+                }
+            }
+        }
+    }
+    .op {
+        .clearfix();
+        width: 100%;
+        font-size: 28px;
+        /*px*/
+        color: #4e4e4e;
+        margin-top: 20px;
+        .wk_iconfont {
+            font-size: 28px;
+            /*px*/
+            margin-right: 10px;
+        }
+        dt, dd {
+            float: left;
+        }
+        dt {
+            width: 40%;
+            color: #3f3f3f;
+            strong {
+                color: #4e4e4e;
+                margin-right: 10px;
+            }
+        }
+        dd {
+            position: relative;
+            .wk_iconfont {
+                color: #92A7C3;
+            }
+            &.comment {
+                width: 25%;
+                &>span {
+                    color: #4e4e4e;
+                    position: absolute;
+                    &.text {
+                        top: -3px;
+                    }
+                }
+                &>.wk_iconfont {
+                    position: relative;
+                    top: 2px;
+                }
+            }
+            &.vote {
+                &>span {
+                    color: #4e4e4e;
+                    position: absolute;
+                    top: 1px;
+                    &.text {
+                        top: -2px;
+                    }
+                }
+                &>.wk_iconfont {
+                    position: absolute;
+                    top: 1px;
+                    left: -45px;
+                }
+            }
+            &.seperator {
+                width: 20%;
+                color: #e4e4e4;
+            }
+        }
+    }
+}
+
+//初始加载列表
+.houseLoading {
+    width: 100%;
+    margin-top: 110px;
+    .pic {
+        -webkit-box-align: center;
+        -webkit-box-pack: center;
+        display: box;
+        display: -webkit-box;
+        div {
+            width: 64px;
+            height: 64px;
+            background: url(../img/source/houselist/loading.gif) no-repeat scroll;
+            background-size: 64px;
+        }
+    }
+    p {
+        font-size: 28px;
+        /*px*/
+        color: #999;
+        text-align: center;
+    }
+}

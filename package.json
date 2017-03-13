@@ -1,0 +1,52 @@
+{
+  "name": "Wukong",
+  "title": "Wukong",
+  "description": "The Biggest Agency Company in The World",
+  "version": "3.4.0",
+  "main": "",
+  "homepage": "http://m.wkzf.com",
+  "author": {
+    "name": "wkzf.com"
+  },
+  "repository": "",
+  "keywords": [],
+  "bugs": {
+    "url": ""
+  },
+  "licenses": [],
+  "dependencies": {
+    "browser-sync": "^2.18.8",
+    "colors": "^1.1.2",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-css-spriter": "^0.4.0",
+    "gulp-css-spritesmith": "^0.0.5",
+    "gulp-header": "^1.8.8",
+    "gulp-jshint": "^2.0.4",
+    "gulp-less": "^3.3.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-requirejs-optimize": "^1.2.0",
+    "gulp-sequence": "^0.4.6",
+    "gulp-uglify": "^2.0.1",
+    "jshint": "^2.9.4",
+    "postcss-px2rem": "^0.3.0"
+  },
+  "devDependencies": {
+    "async": "^0.9.0",
+    "css-spritesmith": "^0.0.3"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "engines": {
+    "node": ">= 0.9.0"
+  }
+}

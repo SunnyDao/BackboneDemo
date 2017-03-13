@@ -1,0 +1,32 @@
+{
+    ".tmp/css/common.css": [
+        "static/css/lib/css/wap/public.less",
+        "static/css/lib/css/widget/tips.less",
+        "static/css/lib/css/wap/tips.less",
+        "static/css/common/*.less"
+    ],
+    ".tmp/css/discoveryDetails.css": [
+        "static/css/discovery/details.less"
+    ],
+    ".tmp/css/discoveryDetailsApp.css": [
+        "static/css/discovery/detailsApp.less"
+    ],
+    ".tmp/css/discoveryList.css": [
+        "static/css/discovery/list.less"
+    ],
+    ".tmp/css/AgentList.css": [
+        "static/css/agent/list.less"
+    ],
+    ".tmp/css/AgentComment.css": [
+        "static/css/agent/agentComment.less"
+    ],
+    ".tmp/css/AgentWechat.css": [
+        "static/css/agent/agentWechat.less"
+    ],
+    ".tmp/css/housingDemand.css": [
+        "static/css/housingDemand/index.less"
+    ],
+    ".tmp/css/agentDetail.css": [
+        "static/css/agent/detail.less"
+    ]
+}

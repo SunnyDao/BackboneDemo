@@ -1,0 +1,331 @@
+@import "../mixins/mixins.less" ;
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+公共部分
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+body {
+    background-color:#F5F5F5 ;
+}
+.wkzf-panel {
+    background-color:#FFFFFF ;
+    .panel-header {
+        border-bottom:1px solid #E4E4E4 ;/*no*/
+        font-size:32px ;/*px*/
+        line-height: 36px;
+        margin-left:30px ;
+        padding:28px 28px 28px 0 ;
+    }
+    .panel-body {
+        padding:30px ;
+    }
+}
+hr {
+    border:none ;
+    border-top:1px solid #E4E4E4 ;/*no*/
+    height:1px ;
+    margin:20px 0 ;
+}
+.top-gap {
+    margin-top:20px ;
+}
+
+.img-responsive {
+    display:block ;
+    height:auto ;
+    width:100% ;
+}
+
+.fit-height {
+    .fit-height() ;
+}
+
+.main-page{
+    padding-bottom: 100px;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+概要部分
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#summary-section {
+    .panel-body {
+        dl {
+            .clearfix() ;
+            dt ,
+            dd {
+                display:block ;
+                font-size:28px ;/*px*/
+            }
+            dt {
+                float:left;
+                width:120px ;
+                color: #4e4e4e;
+                &.pic{
+                    position: relative;
+                }
+                .img{
+                    width: 120px;
+                    height: 120px;
+                    border-radius:50%;
+                    overflow: hidden;
+                    img{
+                        display: block;
+                        width: 100%;
+                    }
+                }
+                .tag{
+                    position: absolute;
+                    bottom: -6px;
+                    right: -5px;
+                    width: 64px;
+                    height: 33px;
+                    background: url('../img/sprite/agent/tag_small.png') no-repeat scroll;
+                    background-size: 100%;
+                }
+            }
+            dd {
+                margin-left:145px ;
+                &.outline>.result ,
+                &.company-name {
+                    color:#737373 ;
+                }
+                &.outline {
+                    height: 40px;
+                    margin-bottom: 13px;
+                    line-height:40px ;
+                    overflow: hidden;
+                    .agent-name {
+                        float: left;
+                        margin-right: 26px;
+                        font-size:36px ; /*px*/
+                    }
+                    .result {
+                        float: left;
+                        margin-right: 30px;
+                        font-size:24px ;/*px*/
+                        .iconMVP,
+                        .iconVIP{
+                            float: left;
+                            width: 40px;
+                            height: 40px;
+                            background: url('../img/sprite/agent/iconMVP.png');
+                            background-size: 100%;
+                        }
+                        .iconVIP{
+                            background: url('../img/sprite/agent/iconVIP.png');
+                            background-size: 100%;
+                        }
+                    }
+                }
+                &.company-name{
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 28px;/*px*/
+                }
+                &.album {
+                    .clearfix() ;
+                    margin-top:20px ;
+                    margin-bottom:20px ;
+                    img {
+                        display:block ;
+                        float:left ;
+                        height:114px ;
+                        margin-right:10px ;
+                        width:170px ;
+                    }
+                }
+                &.agent-tags {
+                    .clearfix() ;
+                    margin-top:13px ;
+                    margin-bottom:20px;
+                    span {
+                        float:left ;
+                        margin:0 10px 10px 0 ;
+                        padding:10px 14px ;
+                        font-size:20px ;/*px*/
+                        line-height: 20px;
+                        color:#7C7C7C ;
+                        background-color:#F5F5F5 ;
+                        .border-radius(3px) ;
+                    }
+                }
+            }
+        }
+    }
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+评价部分
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#rate-section {
+    .outline {
+        border-bottom:1px solid #E4E4E4 ;/*no*/
+        margin-left:30px ;
+        dt {
+            padding: 20px 0;
+            //height: 80px;
+            line-height: 56px;
+            font-size:28px ;/*px*/
+            i{
+                font-size: 26px;/*px*/
+                color: #FDD700;
+            }
+            .score {
+                font-size:40px ;/*px*/
+                line-height: 56px;
+                font-weight: normal;
+                vertical-align: top;
+            }
+        }
+        dd {
+            .clearfix() ;
+            padding-bottom: 17px;
+            span {
+                .border-radius(8px) ;
+                display:block ;
+                font-size:28px ;/*px*/
+                float:left ;
+                margin:0 18px 20px 0 ;
+                padding:10px 24px ;
+                text-align:center ;
+                &.good {
+                    background-color:#E1F0FF ;
+                }
+                &.bad {
+                    background-color:#F5F5F5 ;
+                }
+            }
+        }
+    }
+    .rate-list {
+        dl {
+            border-bottom:1px solid #E4E4E4 ;/*no*/
+            margin-left:30px ;
+            padding:10px 0 ;
+            dt ,
+            dd {
+                line-height:50px ;
+            }
+            dt{
+                i{
+                    font-size: 26px;/*px*/
+                    color: #FDD700;
+                }
+            }
+            dd {
+                color:#999999 ;
+                font-size:24px ;/*px*/
+                &.rate-detail {
+                    color:#4E4E4E ;
+                    font-size:28px ;/*px*/
+                }
+            }
+            &:last-child{
+                border-bottom: none;
+            }
+        }
+    }
+    .tools-group {
+        .clearfix() ;
+        padding:0 15px 15px 15px ;
+        &>li {
+            float:left ;
+            padding:15px ;
+            width:50% ;
+            a {
+                background-color:#F6F6F6 ;
+                .border-radius(6px) ;
+                color:#92A7C3 ;
+                display:block ;
+                font-size:28px ;/*px*/
+                line-height:90px ;
+                text-align:center ;
+            }
+        }
+    }
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+推荐房源部分
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.panel-caption {
+    padding:40px ;
+    height:100px ;
+    fieldset {
+        border:none ;
+        border-top:1px solid #E4E4E4 ;/*no*/
+        font-size:24px ;/*px*/
+        legend {
+            margin:0 auto ;
+            padding:0 65px ;
+        }
+    }
+}
+#house-section {
+    padding-left: 30px;
+    @import '../component/listItem.less';
+    .panel-body{
+        padding: 0;
+    }
+}
+
+#nomatch-section{
+    padding: 16px 26px;
+    opacity: 0.95;
+    background: #EEF1F5;
+    box-shadow: inset 0 1px 0 0 #E1E5E8;
+}
+#requirement-section{
+    height: 206px;
+    margin: 20px 0;
+    padding-top: 52px;
+    padding-left: 30px;
+    background: url('../img/source/agent/requirement.png') no-repeat scroll #fff right bottom;
+    background-size: auto 206px;
+    dt{
+        margin-bottom: 22px;
+        font-size: 32px;/*px*/
+        line-height: 40px;
+        color: #4e4e4e;
+    }
+    dd{
+        a{
+            padding: 6px 24px;
+            font-size: 24px;/*px*/
+            line-height: 44px;
+            border: 1px solid #4081d6;/*no*/
+            border-radius: 4px;
+            background: #fff;
+            color: #4081d6;
+        }
+    }
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+悬浮按钮部分
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#drift-tools {
+    background-color:#FFFFFF ;
+    box-shadow:0px -4px 12px 0px rgba(0,0,0,0.10) ;
+    bottom:0 ;
+    height:100px ;
+    .clearfix() ;
+    left:0 ;
+    position:fixed ;
+    width:100% ;
+    z-index:10000 ;
+    &>li {
+        float:left ;
+        height:100px ;
+        padding-top:12px ;
+        width:50% ;
+        a ,
+        span {
+            color:#4081D6 ;
+            display:block ;
+            text-align:center ;
+        }
+        .wk_iconfont {
+            font-size:36px ;/*px*/
+        }
+    }
+    &>li.weixin{
+        border-left: 1px solid #e4e4e4;/*no*/
+    }
+}

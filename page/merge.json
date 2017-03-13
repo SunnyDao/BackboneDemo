@@ -1,0 +1,9 @@
+{
+	".tmp/css/public.css":[
+        "page/css/public/*.less",
+        "page/css/login/login.less"
+    ],
+    ".tmp/css/index.css":[
+    	"page/css/index/*.less"
+    ]
+}
